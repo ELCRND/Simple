@@ -1,0 +1,63 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --smallest-indent: 8px;
+  --small-indent: 20px;
+  --regular-indent: 30px;
+  --medium-indent: 60px;
+  --large-indent: 90px;
+
+  --title-regular: #666;
+  --description-regular: #85859b;
+
+  --dark-imperial-blue-color: #7875fe;
+}
+%roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+%roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+%font-description {
+  font-size: 18px;
+  line-height: 170%;
+}
+%font-description-under {
+  font-size: 18px;
+  line-height: 150%;
+}
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+
+  box-sizing: border-box;
+}
+body {
+  @extend %roboto-regular;
+}
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(100%, 1100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+@import "header";
+@import "hero";
+@import "result";
+@import "products";
+@import "partners";
+@import "sketchbook";
+@import "footer";

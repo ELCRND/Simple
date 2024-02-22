@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+
+  <body>
+    <div class="header flex">
+      <div class="container flex">
+        <div class="logo header__logo flex">
+          <div class="circle"></div>
+          <span>simple</span>
+          <div class="oval"></div>
+          <div class="circle"></div>
+        </div>
+
+        <nav class="nav header__nav flex">
+          <ol class="nav__list flex">
+            <li class="nav__item"><a href="#">Продукция</a></li>
+            <li class="nav__item"><a href="#">Материалы</a></li>
+            <li class="nav__item"><a href="#">О нас</a></li>
+            <li class="nav__item"><a href="#">Контакты</a></li>
+          </ol>
+        </nav>
+
+        <div class="header__btns flex">
+          <button class="btn__search btn-reset">
+            <svg
+              width="24.000000"
+              height="24.000000"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clipPath id="clip2_25">
+                  <rect
+                    id="search"
+                    width="24.000000"
+                    height="24.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+              </defs>
+              <rect
+                id="search"
+                width="24.000000"
+                height="24.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip2_25)">
+                <path
+                  id="Vector"
+                  d="M13 19C17.4183 19 21 15.4182 21 11C21 6.58179 17.4183 3 13 3C8.58173 3 5 6.58179 5 11C5 15.4182 8.58173 19 13 19Z"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                />
+                <path
+                  id="Vector"
+                  d="M2.99997 21L7.34998 16.6499"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </button>
+          <button class="btn__login">
+            <svg
+              width="24.000000"
+              height="24.000000"
+              viewBox="0 0 24 24"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <desc>Created with Pixso.</desc>
+              <defs>
+                <clipPath id="clip2_45">
+                  <rect
+                    id="log-in"
+                    width="24.000000"
+                    height="24.000000"
+                    fill="white"
+                    fill-opacity="0"
+                  />
+                </clipPath>
+              </defs>
+              <rect
+                id="log-in"
+                width="24.000000"
+                height="24.000000"
+                fill="#FFFFFF"
+                fill-opacity="0"
+              />
+              <g clip-path="url(#clip2_45)">
+                <path
+                  id="Vector"
+                  d="M15 3L19 3C19.5304 3 20.0392 3.21069 20.4142 3.58569C20.7893 3.96094 21 4.46948 21 5L21 19C21 19.5305 20.7893 20.0391 20.4142 20.4143C20.0392 20.7893 19.5304 21 19 21L15 21"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M10 17L15 12L10 7"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M15 12L3 12"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="2.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </g>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- hero -->
+    <article class="hero">
+      <div class="hero__content container">
+        <section class="hero__description">
+          <h1>Простые вещи. Из бумаги</h1>
+          <p>
+            Бума́га (предположительно от итал. bombagia, первоисточником же
+            считается иранский) — волокнистый материал с минеральными добавками.
+          </p>
+          <button>Каталог</button>
+        </section>
+
+        <section class="col-7 hero__image">
+          <img src="/assets/paper.png" alt="paper" />
+        </section>
+      </div>
+    </article>
+
+    <!-- result -->
+    <article class="result">
+      <div class="result__content container">
+        <section class="cards__list flex">
+          <div class="result__card">
+            <div class="card__img">
+              <img src="/assets/result1_card.png" alt="card image" />
+            </div>
+
+            <div class="card__desc">
+              <h1>V.1</h1>
+              <span>Результат вашего обучения</span>
+            </div>
+          </div>
+
+          <div class="result__card">
+            <div class="card__img">
+              <img src="/assets/result2_card.png" alt="card image" />
+            </div>
+
+            <div class="card__desc">
+              <h1>V.1</h1>
+              <span>Результат вашего обучения</span>
+            </div>
+          </div>
+
+          <div class="result__card">
+            <div class="card__img">
+              <img src="/assets/result3_card.png" alt="card image" />
+            </div>
+
+            <div class="card__desc">
+              <h1>V.1</h1>
+              <span>Результат вашего обучения</span>
+            </div>
+          </div>
+        </section>
+
+        <section class="demo flex">
+          <div class="demo__image">
+            <img src="/assets/demo.png" alt="demo result" />
+          </div>
+          <div class="demo__description">
+            <h1>Максимальная белизна</h1>
+            <p>
+              Для повышения белизны, гладкости и мягкости в состав бумажной
+              массы вводят белые минеральные вещества: мел, тальк, каолин и др.
+              Эта операция называется наполнением. Отлив бумажного листа
+              осуществляют на бумагоделательной машине, важнейшей частью которой
+              является непрерывно движущаяся (как транспортер) металлическая или
+              капроновая сетка.
+            </p>
+          </div>
+        </section>
+      </div>
+    </article>
+
+    <!-- products -->
+    <section class="products">
+      <div class="container">
+        <ul class="products__list flex">
+          <li>
+            <article class="product__card">
+              <section class="product__image">
+                <img src="assets/package.jpeg" alt="product card image" />
+              </section>
+              <section class="product__description">
+                <h1>Упаковка</h1>
+                <span>Тираж: от 50 штук</span>
+                <p>
+                  Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+                  различные формы и расцветки, изготовим форму под заказ.
+                </p>
+                <a href="#">Подробнее</a>
+              </section>
+            </article>
+          </li>
+
+          <li>
+            <article class="product__card">
+              <section class="product__image">
+                <img src="assets/packet.jpeg" alt="product card image" />
+              </section>
+              <section class="product__description">
+                <h1>Пакеты</h1>
+                <span>Тираж: от 200 штук</span>
+                <p>
+                  С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
+                  картон, крафт-бумага. Различные расцветки и дизайн.
+                </p>
+                <a href="#">Подробнее</a>
+              </section>
+            </article>
+          </li>
+
+          <li>
+            <article class="product__card">
+              <section class="product__image">
+                <img src="assets/case.jpeg" alt="product card image" />
+              </section>
+
+              <section class="product__description">
+                <h1>Кейсы</h1>
+                <span>Тираж: от 30 штук</span>
+                <p>
+                  Подойдет для документов и других бумаг. Различные расцветки,
+                  размеры и плотность. Материал: прессованная бумага.
+                </p>
+                <a href="#">Подробнее</a>
+              </section>
+            </article>
+          </li>
+
+          <li>
+            <article class="product__card">
+              <section class="product__image">
+                <img
+                  src="assets/others_products.jpeg"
+                  alt="product card image"
+                />
+              </section>
+
+              <section class="product__description">
+                <h1>Другие изделия</h1>
+                <span>Тираж: от 100 штук</span>
+                <p>
+                  Нестандартные упаковки, кейсы и другие изделия различных
+                  размеров и конфигураций. Изготовим в кратчайшие сроки.
+                </p>
+                <a href="#">Подробнее</a>
+              </section>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- partner -->
+    <section class="partners">
+      <div class="container">
+        <ul class="partners__list flex">
+          <li class="partners__item">
+            <a href="#">
+              <img src="assets/partner1.png" alt="partners logo" />
+            </a>
+          </li>
+
+          <li class="partners__item">
+            <a href="#">
+              <img src="assets/partner2.png" alt="partners logo" />
+            </a>
+          </li>
+
+          <li class="partners__item">
+            <a href="#">
+              <img src="assets/partner3.png" alt="partners logo" />
+            </a>
+          </li>
+
+          <li class="partners__item">
+            <a href="#">
+              <img src="assets/partner4.png" alt="partners logo" />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- sketchbook -->
+    <article class="sketchbook">
+      <div class="sketchbook__content container">
+        <section class="sketchbook__description">
+          <h1>Simple скетчбук</h1>
+          <p>
+            80 листов, твердая обложка, бумага Fabriano 200 г/м2. Подойдет и для
+            графики и для акварели. Для самых смелых творческих замыслов!
+          </p>
+          <button>Купить</button>
+        </section>
+
+        <section class="sketchbook__image">
+          <picture>
+            <source
+              srcset="assets/sketchbook_desktop.png"
+              media="(min-width: 1200px)"
+            />
+            <source srcset="assets/sketchbook.png" />
+            <img src="assets/sketchbook.png" alt="sketchbook image" />
+          </picture>
+        </section>
+      </div>
+    </article>
+
+    <footer class="footer">
+      <div class="container flex">
+        <div class="logo footer__logo flex">
+          <div class="circle"></div>
+          <span>simple</span>
+          <div class="oval"></div>
+          <div class="circle"></div>
+        </div>
+        <div class="socialNetwork">
+          <ul class="socialNetwork__list flex">
+            <li>
+              <a>
+                <img
+                  src="assets/facebook_logo.svg"
+                  alt="social network logo facebook"
+                />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img
+                  src="assets/twitter_logo.svg"
+                  alt="social network logo twitter"
+                />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img
+                  src="assets/instagram_logo.svg"
+                  alt="social network logo instagram"
+                />
+              </a>
+            </li>
+            <li>
+              <a>
+                <img
+                  src="assets/youtube_logo.svg"
+                  alt="social network logo yotube"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__copy">Simple ® 2021</div>
+    </footer>
+  </body>
+</html>

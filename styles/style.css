@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+:root {
+  --smallest-indent: 8px;
+  --small-indent: 20px;
+  --regular-indent: 30px;
+  --medium-indent: 60px;
+  --large-indent: 90px;
+  --title-regular: #666;
+  --description-regular: #85859b;
+  --dark-imperial-blue-color: #7875fe;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.sketchbook .sketchbook__content .sketchbook__description p, .products .product__card .product__description p, .result .demo .demo__description p {
+  font-size: 18px;
+  line-height: 170%;
+}
+
+.result .cards__list .result__card, .hero .hero__description p {
+  font-size: 18px;
+  line-height: 150%;
+}
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  width: min(100%, 1100px);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flex {
+  display: flex;
+  align-items: center;
+}
+
+/* header */
+.header {
+  height: 80px;
+  border-bottom: 1px solid #ddd;
+  font-size: 20px;
+  line-height: 23px;
+}
+
+.logo {
+  margin-right: auto;
+  display: flex;
+  gap: 5px;
+}
+.logo .circle {
+  width: 17px;
+  height: 17px;
+  border: 1px solid #333333;
+  border-radius: 50%;
+}
+.logo .oval {
+  width: 32px;
+  height: 17px;
+  border: 1px solid #333333;
+  border-radius: 11px;
+}
+
+.nav__list {
+  margin: 0;
+  list-style: none;
+  gap: var(--medium-indent);
+}
+.nav__list a {
+  color: #4c5866;
+}
+.nav__list .nav__item:hover > a {
+  color: var(--dark-imperial-blue-color);
+  cursor: pointer;
+  transition: color ease-in-out 150ms;
+}
+.nav__list .nav__item > a:active {
+  color: #4946b4;
+}
+.nav__list .nav__item > a:focus-visible {
+  outline: none;
+  background-color: #dad9fb;
+  box-shadow: 0 0 0 4px #dad9fb;
+}
+
+.header__btns {
+  margin-left: 65px;
+  display: flex;
+  gap: var(--regular-indent);
+}
+.header__btns .btn__search,
+.header__btns .btn__login {
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+.header__btns .btn__search:hover g [stroke],
+.header__btns .btn__login:hover g [stroke] {
+  stroke: #4946b4;
+  transition: stroke ease-in-out 0.3s;
+}
+.header__btns .btn__search:active g [stroke],
+.header__btns .btn__login:active g [stroke] {
+  stroke: #c2c2c2;
+  transition: none;
+}
+.header__btns .btn__search:focus-visible,
+.header__btns .btn__login:focus-visible {
+  outline: none;
+  background-color: #dad9fb;
+}
+
+/* hero */
+.hero .hero__content {
+  max-height: 560px;
+  margin-top: var(--medium-indent);
+  overflow: hidden;
+  display: grid;
+  grid-template-rows: 100%;
+  grid-template-columns: 445px auto;
+  gap: 125px;
+  align-items: center;
+}
+.hero .hero__description h1 {
+  color: #4c5866;
+  font-size: 60px;
+  font-weight: 400;
+  line-height: 100%;
+}
+.hero .hero__description p {
+  padding-top: var(--regular-indent);
+  padding-bottom: var(--regular-indent);
+  color: var(--description-regular);
+}
+.hero .hero__description button {
+  padding: var(--small-indent) var(--large-indent);
+  border: 1px solid var(--dark-imperial-blue-color);
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-imperial-blue-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+.hero .hero__image {
+  align-self: flex-start;
+}
+.hero .hero__image img {
+  max-width: 100%;
+}
+
+/* result */
+.result {
+  padding-top: var(--large-indent);
+  padding-bottom: var(--large-indent);
+  background-color: #ebebeb;
+}
+.result .cards__list {
+  margin-bottom: var(--large-indent);
+  gap: var(--regular-indent);
+}
+.result .cards__list .result__card {
+  padding-top: var(--small-indent);
+  display: grid;
+  gap: var(--regular-indent);
+  grid-template-columns: 160px auto;
+  border-top: 1px solid #c0c0c0;
+}
+.result .cards__list .result__card h1 {
+  font-weight: 500;
+  color: var(--title-regular);
+}
+.result .cards__list .result__card span {
+  color: var(--description-regular);
+}
+.result .demo {
+  display: flex;
+  gap: var(--regular-indent);
+}
+.result .demo .demo__description h1 {
+  margin-bottom: var(--small-indent);
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--title-regular);
+}
+.result .demo .demo__description p {
+  color: var(--description-regular);
+}
+
+/* products */
+.products {
+  padding-top: var(--large-indent);
+  padding-bottom: var(--large-indent);
+}
+.products .products__list {
+  list-style: none;
+  gap: 22px;
+}
+.products .product__card .product__description h1 {
+  margin-top: var(--small-indent);
+  margin-bottom: var(--smallest-indent);
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 35px;
+  color: var(--title-regular);
+}
+.products .product__card .product__description span {
+  font-size: 14px;
+  line-height: 16px;
+  color: #b5b5bd;
+}
+.products .product__card .product__description p {
+  margin-top: var(--smallest-indent);
+  margin-bottom: var(--small-indent);
+  color: var(--description-regular);
+}
+.products .product__card .product__description a {
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-imperial-blue-color);
+}
+.products .product__card .product__description a::after {
+  content: url("../assets/arros_icon.png");
+  margin-left: 5px;
+}
+
+/* partners */
+.partners {
+  padding-top: var(--large-indent);
+  padding-bottom: var(--large-indent);
+  background-color: #ebebeb;
+}
+.partners .partners__list {
+  list-style: none;
+  gap: var(--regular-indent);
+}
+
+/* sketchbook */
+.sketchbook {
+  padding-top: var(--large-indent);
+}
+.sketchbook .sketchbook__content {
+  display: grid;
+  grid-template-columns: auto 730px;
+  gap: var(--regular-indent);
+}
+.sketchbook .sketchbook__content .sketchbook__image img {
+  height: 100%;
+}
+.sketchbook .sketchbook__content .sketchbook__description h1 {
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 100%;
+  color: var(--title-regular);
+}
+.sketchbook .sketchbook__content .sketchbook__description p {
+  margin-top: var(--smallest-indent);
+  margin-bottom: var(--regular-indent);
+  color: var(--description-regular);
+}
+.sketchbook .sketchbook__content .sketchbook__description button {
+  padding: 22px 94px;
+  border: 1px solid var(--dark-imperial-blue-color);
+  font-size: 20px;
+  line-height: 23px;
+  color: var(--dark-imperial-blue-color);
+  background-color: transparent;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #4c5866;
+}
+footer .container {
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+footer .socialNetwork__list {
+  list-style: none;
+  gap: var(--regular-indent);
+}
+footer .footer__copy {
+  text-align: center;
+  background-color: #fff;
+}
+
+/*# sourceMappingURL=style.css.map */

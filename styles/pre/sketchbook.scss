@@ -1,0 +1,40 @@
+/* sketchbook */
+
+.sketchbook {
+  padding-top: var(--large-indent);
+  .sketchbook__content {
+    display: grid;
+    grid-template-columns: auto 730px;
+    gap: var(--regular-indent);
+
+    .sketchbook__image {
+      img {
+        height: 100%;
+      }
+    }
+
+    .sketchbook__description {
+      h1 {
+        font-size: 40px;
+        font-weight: 400;
+        line-height: 100%;
+        color: var(--title-regular);
+      }
+      p {
+        margin-top: var(--smallest-indent);
+        margin-bottom: var(--regular-indent);
+        color: var(--description-regular);
+        @extend %font-description;
+      }
+      button {
+        padding: 22px 94px;
+        border: 1px solid var(--dark-imperial-blue-color);
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--dark-imperial-blue-color);
+        background-color: transparent;
+        cursor: pointer;
+      }
+    }
+  }
+}

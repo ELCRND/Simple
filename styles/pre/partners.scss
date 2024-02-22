@@ -1,0 +1,12 @@
+/* partners */
+
+.partners {
+  padding-top: var(--large-indent);
+  padding-bottom: var(--large-indent);
+  background-color: #ebebeb;
+
+  .partners__list {
+    list-style: none;
+    gap: var(--regular-indent);
+  }
+}

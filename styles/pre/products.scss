@@ -1,0 +1,44 @@
+/* products */
+
+.products {
+  padding-top: var(--large-indent);
+  padding-bottom: var(--large-indent);
+
+  .products__list {
+    list-style: none;
+    gap: 22px;
+  }
+
+  .product__card {
+    .product__description {
+      h1 {
+        margin-top: var(--small-indent);
+        margin-bottom: var(--smallest-indent);
+        font-size: 30px;
+        font-weight: 400;
+        line-height: 35px;
+        color: var(--title-regular);
+      }
+      span {
+        font-size: 14px;
+        line-height: 16px;
+        color: #b5b5bd;
+      }
+      p {
+        margin-top: var(--smallest-indent);
+        margin-bottom: var(--small-indent);
+        color: var(--description-regular);
+        @extend %font-description;
+      }
+      a {
+        font-size: 20px;
+        line-height: 23px;
+        color: var(--dark-imperial-blue-color);
+      }
+      a::after {
+        content: url("../assets/arros_icon.png");
+        margin-left: 5px;
+      }
+    }
+  }
+}

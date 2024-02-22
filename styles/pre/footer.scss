@@ -1,0 +1,16 @@
+footer {
+  background-color: #4c5866;
+
+  .container {
+    padding-top: 28px;
+    padding-bottom: 28px;
+  }
+  .socialNetwork__list {
+    list-style: none;
+    gap: var(--regular-indent);
+  }
+  .footer__copy {
+    text-align: center;
+    background-color: #fff;
+  }
+}
