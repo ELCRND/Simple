@@ -27,7 +27,7 @@
         </nav>
 
         <div class="header__btns flex">
-          <button class="btn__search btn-reset">
+          <button class="btn__search">
             <svg
               width="24.000000"
               height="24.000000"
@@ -76,6 +76,55 @@
               </g>
             </svg>
           </button>
+          <form action="#" class="searchForm hidden">
+            <input type="text" placeholder="Найти" class="searchForm__input" />
+            <button class="resetButton">
+              <svg
+                width="16.000000"
+                height="16.000000"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <desc>Created with Pixso.</desc>
+                <defs />
+                <rect
+                  id="status=default"
+                  width="16.000000"
+                  height="16.000000"
+                  fill="#FFFFFF"
+                  fill-opacity="0"
+                />
+                <circle
+                  id="Ellipse 29"
+                  cx="8.000000"
+                  cy="8.000000"
+                  r="8.000000"
+                  fill="#D1D1E5"
+                  fill-opacity="1.000000"
+                />
+                <path
+                  id="Vector"
+                  d="M5.99951 10.35L10.3496 6"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+                <path
+                  id="Vector"
+                  d="M10.3501 10.35L6 6"
+                  stroke="#4C5866"
+                  stroke-opacity="1.000000"
+                  stroke-width="1.000000"
+                  stroke-linejoin="round"
+                  stroke-linecap="round"
+                />
+              </svg>
+            </button>
+          </form>
           <button class="btn__login">
             <svg
               width="24.000000"
@@ -204,10 +253,12 @@
             <p>
               Для повышения белизны, гладкости и мягкости в состав бумажной
               массы вводят белые минеральные вещества: мел, тальк, каолин и др.
-              Эта операция называется наполнением. Отлив бумажного листа
-              осуществляют на бумагоделательной машине, важнейшей частью которой
-              является непрерывно движущаяся (как транспортер) металлическая или
-              капроновая сетка.
+              Эта операция называется наполнением.
+            </p>
+            <p>
+              Отлив бумажного листа осуществляют на бумагоделательной машине,
+              важнейшей частью которой является непрерывно движущаяся (как
+              транспортер) металлическая или капроновая сетка.
             </p>
           </div>
         </section>
@@ -217,80 +268,124 @@
     <!-- products -->
     <section class="products">
       <div class="container">
-        <ul class="products__list flex">
-          <li>
-            <article class="product__card">
-              <section class="product__image">
-                <img src="assets/package.jpeg" alt="product card image" />
-              </section>
-              <section class="product__description">
-                <h1>Упаковка</h1>
-                <span>Тираж: от 50 штук</span>
-                <p>
-                  Сделано из крафт-бумаги или плотного картона. Упаковки имеют
-                  различные формы и расцветки, изготовим форму под заказ.
-                </p>
-                <a href="#">Подробнее</a>
-              </section>
-            </article>
-          </li>
+        <div class="products_swiper">
+          <ul class="products__list flex swiper-wrapper">
+            <li class="swiper-slide">
+              <article class="product__card">
+                <section class="product__image">
+                  <picture>
+                    <source
+                      srcset="assets/package.jpeg"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/package_tablet.jpeg"
+                      media="(max-width: 1200px)"
+                    />
+                    <img src="assets/package.jpeg" alt="product card image" />
+                  </picture>
+                </section>
+                <section class="product__description">
+                  <h1>Упаковка</h1>
+                  <span>Тираж: от 50 штук</span>
+                  <p>
+                    Сделано из крафт-бумаги или плотного картона. Упаковки имеют
+                    различные формы и расцветки, изготовим форму под заказ.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </section>
+              </article>
+            </li>
 
-          <li>
-            <article class="product__card">
-              <section class="product__image">
-                <img src="assets/packet.jpeg" alt="product card image" />
-              </section>
-              <section class="product__description">
-                <h1>Пакеты</h1>
-                <span>Тираж: от 200 штук</span>
-                <p>
-                  С прямоугольным дном. От 10 см до 60 см по высоте. Материалы:
-                  картон, крафт-бумага. Различные расцветки и дизайн.
-                </p>
-                <a href="#">Подробнее</a>
-              </section>
-            </article>
-          </li>
+            <li class="swiper-slide">
+              <article class="product__card">
+                <section class="product__image">
+                  <picture>
+                    <source
+                      srcset="assets/packet.jpeg"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/packet_table.jpeg"
+                      media="(max-width: 1200px)"
+                    />
+                    <img src="assets/packet.jpeg" alt="product card image" />
+                  </picture>
+                </section>
+                <section class="product__description">
+                  <h1>Пакеты</h1>
+                  <span>Тираж: от 200 штук</span>
+                  <p>
+                    С прямоугольным дном. От 10 см до 60 см по высоте.
+                    Материалы: картон, крафт-бумага. Различные расцветки
+                    и дизайн.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </section>
+              </article>
+            </li>
 
-          <li>
-            <article class="product__card">
-              <section class="product__image">
-                <img src="assets/case.jpeg" alt="product card image" />
-              </section>
+            <li class="swiper-slide">
+              <article class="product__card">
+                <section class="product__image">
+                  <picture>
+                    <source
+                      srcset="assets/case.jpeg"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/case_tablet.jpeg"
+                      media="(max-width: 1200px)"
+                    />
 
-              <section class="product__description">
-                <h1>Кейсы</h1>
-                <span>Тираж: от 30 штук</span>
-                <p>
-                  Подойдет для документов и других бумаг. Различные расцветки,
-                  размеры и плотность. Материал: прессованная бумага.
-                </p>
-                <a href="#">Подробнее</a>
-              </section>
-            </article>
-          </li>
+                    <img src="assets/case.jpeg" alt="product card image" />
+                  </picture>
+                </section>
 
-          <li>
-            <article class="product__card">
-              <section class="product__image">
-                <img
-                  src="assets/others_products.jpeg"
-                  alt="product card image"
-                />
-              </section>
+                <section class="product__description">
+                  <h1>Кейсы</h1>
+                  <span>Тираж: от 30 штук</span>
+                  <p>
+                    Подойдет для документов и других бумаг. Различные расцветки,
+                    размеры и плотность. Материал: прессованная бумага.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </section>
+              </article>
+            </li>
 
-              <section class="product__description">
-                <h1>Другие изделия</h1>
-                <span>Тираж: от 100 штук</span>
-                <p>
-                  Нестандартные упаковки, кейсы и другие изделия различных
-                  размеров и конфигураций. Изготовим в кратчайшие сроки.
-                </p>
-                <a href="#">Подробнее</a>
-              </section>
-            </article>
-          </li>
-        </ul>
+            <li class="swiper-slide">
+              <article class="product__card">
+                <section class="product__image">
+                  <picture>
+                    <source
+                      srcset="assets/others_products.jpeg"
+                      media="(max-width: 768px)"
+                    />
+                    <source
+                      srcset="assets/others_products_tablet.jpeg"
+                      media="(max-width: 1200px)"
+                    />
+                    <img
+                      src="assets/others_products.jpeg"
+                      alt="product card image"
+                    />
+                  </picture>
+                </section>
+
+                <section class="product__description">
+                  <h1>Другие изделия</h1>
+                  <span>Тираж: от 100 штук</span>
+                  <p>
+                    Нестандартные упаковки, кейсы и другие изделия различных
+                    размеров и конфигураций. Изготовим в кратчайшие сроки.
+                  </p>
+                  <a href="#">Подробнее</a>
+                </section>
+              </article>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
 
@@ -343,14 +438,21 @@
               srcset="assets/sketchbook_desktop.png"
               media="(min-width: 1200px)"
             />
-            <source srcset="assets/sketchbook.png" />
-            <img src="assets/sketchbook.png" alt="sketchbook image" />
+            <source
+              srcset="assets/sketchbook_tablet.png"
+              media="(max-width: 1200px, min-width:768px)"
+            />
+            <source
+              srcset="assets/sketchbook_mobile.png"
+              media="(max-width: 768px)"
+            />
+            <img src="assets/sketchbook_mobile.png" alt="sketchbook image" />
           </picture>
         </section>
       </div>
     </article>
 
-    <footer class="footer">
+    <!-- <footer class="footer">
       <div class="container flex">
         <div class="logo footer__logo flex">
           <div class="circle"></div>
@@ -396,6 +498,7 @@
         </div>
       </div>
       <div class="footer__copy">Simple ® 2021</div>
-    </footer>
+    </footer> -->
+    <script src="index.js" type="module"></script>
   </body>
 </html>

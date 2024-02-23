@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+
 :root {
   --smallest-indent: 8px;
   --small-indent: 20px;
@@ -11,6 +12,7 @@
 
   --dark-imperial-blue-color: #7875fe;
 }
+
 %roboto-regular {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -29,6 +31,7 @@
   font-size: 18px;
   line-height: 150%;
 }
+
 *,
 *:after,
 *:before {
@@ -37,6 +40,7 @@
 
   box-sizing: border-box;
 }
+
 body {
   @extend %roboto-regular;
 }
@@ -45,13 +49,16 @@ a {
 }
 
 .container {
-  width: min(100%, 1100px);
+  width: min(90vw, 1100px);
   margin-left: auto;
   margin-right: auto;
 }
 .flex {
   display: flex;
   align-items: center;
+}
+.hidden {
+  display: none;
 }
 
 @import "header";
@@ -61,3 +68,4 @@ a {
 @import "partners";
 @import "sketchbook";
 @import "footer";
+@import "swiper";

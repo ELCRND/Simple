@@ -2,10 +2,28 @@
 
 .sketchbook {
   padding-top: var(--large-indent);
+
+  @media screen and (max-width: 1024px) {
+    padding-top: 60px;
+  }
   .sketchbook__content {
     display: grid;
     grid-template-columns: auto 730px;
     gap: var(--regular-indent);
+
+    @media screen and (max-width: 1200px) {
+      grid-template-columns: auto auto;
+    }
+    @media screen and (max-width: 768px) {
+      grid-template-rows: auto auto;
+      grid-template-columns: auto;
+      .sketchbook__image {
+        grid-row: 1 / 2;
+        img {
+          width: 100%;
+        }
+      }
+    }
 
     .sketchbook__image {
       img {
@@ -34,6 +52,24 @@
         color: var(--dark-imperial-blue-color);
         background-color: transparent;
         cursor: pointer;
+        transition: background ease-in-out 0.2s, color ease-in-out 0.2s;
+
+        &:hover {
+          color: #fff;
+          background-color: #7875fe;
+        }
+        &:active {
+          color: #fff;
+          background-color: #4946b4;
+        }
+        &:focus-visible {
+          outline: none;
+          color: var(--dark-imperial-blue-color);
+          background-color: #dad9fb;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 20px 50px;
+        }
       }
     }
   }

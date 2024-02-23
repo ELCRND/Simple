@@ -4,12 +4,30 @@
   padding-top: var(--large-indent);
   padding-bottom: var(--large-indent);
 
+  @media screen and (max-width: 1024px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
   .products__list {
     list-style: none;
     gap: 22px;
+    @media screen and (max-width: 1200px) {
+      display: grid;
+      grid-template-rows: auto auto;
+      grid-template-columns: auto auto;
+      justify-content: center;
+      gap: var(--regular-indent);
+    }
+    @media screen and (max-width: 768px) {
+      display: flex;
+      justify-content: flex-start;
+      gap: 22px;
+    }
   }
 
   .product__card {
+    width: min-content;
     .product__description {
       h1 {
         margin-top: var(--small-indent);
@@ -34,10 +52,19 @@
         font-size: 20px;
         line-height: 23px;
         color: var(--dark-imperial-blue-color);
-      }
-      a::after {
-        content: url("../assets/arros_icon.png");
-        margin-left: 5px;
+        transition: color ease-in-out 0.2s;
+
+        &::after {
+          content: url("../assets/arros_icon.png");
+          margin-left: 5px;
+        }
+        &:hover {
+          color: #4946b4;
+        }
+        &:focus-visible {
+          outline: none;
+          background-color: #dad9fb;
+        }
       }
     }
   }
